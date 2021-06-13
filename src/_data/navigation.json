@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "text": "Home",
+      "url": "/",
+      "external": false
+    },
+    {
+      "text": "Telegram",
+      "url": "https://t.me/Stas_V",
+      "external": true
+    }
+  ]
+}
