@@ -22,6 +22,7 @@
     "bl": "^3.0.0",
     "chokidar-cli": "^2.1.0",
     "cross-env": "^5.2.1",
+    "gh-pages": "^3.2.0",
     "make-dir-cli": "^2.0.0",
     "prettier": "^1.19.1",
     "rollup": "^1.32.1",
@@ -30,6 +31,8 @@
     "rollup-plugin-node-resolve": "^5.2.0"
   },
   "scripts": {
+    "predeploy": "npm run production",
+    "deploy": "gh-pages -d dist",
     "sass:tokens": "npx json-to-scss src/_data/tokens.json src/scss/_tokens.scss",
     "sass:process": "npm run sass:tokens && sass src/scss/global.scss src/_includes/assets/css/global.css --style=compressed",
     "cms:precompile": "make-dir dist/admin && nunjucks-precompile src/_includes > dist/admin/templates.js -i \"\\.(njk|css|svg)$\"",
@@ -48,5 +51,5 @@
   "bugs": {
     "url": "https://github.com/hankchizljaw/hylia/issues"
   },
-  "homepage": "https://github.com/hankchizljaw/hylia#readme"
+  "homepage": "https://blog.vstas.ru"
 }
